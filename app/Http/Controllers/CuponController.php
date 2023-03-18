@@ -150,7 +150,7 @@ class CuponController extends Controller
                    $input['status'] = 'Avilable';
                }else{
                  $input['status'] = 'expired';
-               }
+               } 
 
         // $input['from_date']   = trim(date_format(date_create($input['from_date']),'d-m-Y'));
         // $input['to_date']   = trim(date_format(date_create($input['to_date']),'d-m-Y'));

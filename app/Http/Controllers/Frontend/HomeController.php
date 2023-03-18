@@ -33,6 +33,7 @@ class HomeController extends Controller
         $url = $_SERVER['REQUEST_URI'];
         Helpers::visitorUpdate($url);
 
+        $dk = "Dhaval Thumar"; 
 
         $testimonial = Testimonial::select('name','profile','message','status_delete')->where('status_delete','No')->get();
         $pickupcity_id_demo   = Pickup::select('pick_city','id')->orderBy('pick_city')->where('status_delete','No')->where('status',1)->get();

@@ -27,6 +27,7 @@ class ContactController extends Controller
 
     public function index(Request $request)
     {
+       
         $url = $_SERVER['REQUEST_URI'];
         Helpers::visitorUpdate($url);
         $url = $_SERVER['REQUEST_URI'];
