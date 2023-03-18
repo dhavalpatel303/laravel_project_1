@@ -1,0 +1,1 @@
+<?php /**PATH C:\xampp\htdocs\demo_web\resources\views/errors/404.blade.php ENDPATH**/ ?>

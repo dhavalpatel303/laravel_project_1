@@ -1,0 +1,45 @@
+<div class="container">
+        <div class="section_title text-center">
+
+        <?php  for($i=0;$i<count($oneway_detail_uniq);$i++)
+
+        {?>
+            <?php for($j=0;$j<count($pickupcity_id);$j++) {?>
+                <?php if($oneway_detail_uniq[$i]['pcity_id'] == $pickupcity_id[$j]['id']) {?>
+                <h5 >One Way Taxi From <span><?=$pickupcity_id[$j]['pick_city']?></span></h5>
+
+            <div class="row">
+
+                <?php for($m=0;$m<count($oneway_detail_uniq_all);$m++) {?>
+                    <?php for($k=0;$k<count($dropcity_id);$k++) {?>
+                        <?php  if($oneway_detail_uniq_all[$m]['dcity_id'] == $dropcity_id[$k]['id'] && $oneway_detail_uniq_all[$m]['pcity_id'] == $pickupcity_id[$j]['id']) {?>
+                        <div class="col-md-3">
+                            <ul class="features-list">
+                            <li><a href="https://roshdeepcab.in/index.php/search_cab/Ahmedabad/Ankleshwar"><?=$pickupcity_id[$j]['pick_city']?> To <?=$dropcity_id[$k]['drop_city']?> Cab</a></li>
+                    </div>
+
+                <?php }}} ?>
+            </div>
+            <?php }}} ?>
+    </div>
+
+
+
+
+    <div class="media-body">
+                                                <?php  for($i=0;$i<count($oneway_detail_uniq);$i++){?>
+                                                    <?php for($j=0;$j<count($pickupcity_id);$j++) {?>
+
+                                                    <?php if($oneway_detail_uniq[$i]['pcity_id'] == $pickupcity_id[$j]['id'])    {?>
+                                                <div class="row">
+                                                    <?php for($m=0;$m<count($oneway_detail_uniq_all);$m++) {?>
+                                                        <?php for($k=0;$k<count($dropcity_id);$k++) {?>
+                                                            <?php  if($oneway_detail_uniq_all[$m]['dcity_id'] == $dropcity_id[$k]['id'] && $oneway_detail_uniq_all[$m]['pcity_id'] == $pickupcity_id[$j]['id']) {?>
+                                                            <div class="col-md-3">
+                                                                <ul class="features-list">
+                                                                <li><a href="https://roshdeepcab.in/index.php/search_cab/Ahmedabad/Ankleshwar"><?=$pickupcity_id[$j]['pick_city']?> To <?=$dropcity_id[$k]['drop_city']?> Cab</a></li>
+                                                            </div>
+                                                         <?php }}} ?>
+                                                </div>
+                                                <?php }}} ?>>
+                                            </div>
